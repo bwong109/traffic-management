@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <!-- Input files for the simulation -->
+    <input>
+        <net-file value="maps/city4.net.xml"/> <!-- Road network definition -->
+        <route-files value="maps/city4.rou.xml"/> <!-- Vehicle routes -->
+    </input>
+
+    <!-- Simulation time configuration -->
+    <time>
+        <begin value="0"/> <!-- Start time -->
+        <end value="500"/> <!-- End time -->
+    </time>
+
+    <!-- Reporting and logging configuration -->
+    <report>
+        <verbose value="true"/> <!-- Enable detailed logs -->
+        <no-step-log value="true"/> <!-- Suppress step-by-step logs -->
+        <duration-log.statistics value="true"/> <!-- Log duration statistics -->
+    </report>
+</configuration>

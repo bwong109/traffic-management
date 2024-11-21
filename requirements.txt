@@ -1,4 +1,6 @@
-torch
-numpy
-matplotlib
 sumo
+torch
+matplotlib
+numpy
+pyserial
+traci
