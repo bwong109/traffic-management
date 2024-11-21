@@ -1,5 +1,5 @@
 
-# Dynamic Traffic Light Management System
+# Traffic Light Management System
 
 This project implements a reinforcement learning-based system to optimize traffic light management using SUMO (Simulation of Urban MObility). The system is designed to train a traffic model on a specific network and test its performance, providing insights into reducing waiting time and improving traffic flow.
 
@@ -33,14 +33,14 @@ This project implements a reinforcement learning-based system to optimize traffi
 
 To train a traffic management model on a specific network:
 ```bash
-python train.py --train true --net_file "maps/city1.net.xml" --steps 500 --epochs 10
+python train.py --train true --net_file "maps/city1.net.xml" --steps 500
 ```
 
 ### Testing a Model
 
 To test a pre-trained model on a specific network:
 ```bash
-python train.py --train false --net_file "maps/city1.net.xml" --model_path "models/traffic_model_city1.pth"
+python train.py --train false --net_file "maps/city1.net.xml" --model_name "models/traffic_model_city3.net.pth" --epochs 1 --steps 500
 ```
 
 ### Generate Route Files
@@ -64,9 +64,5 @@ To visualize the performance in SUMO GUI, ensure you specify `--train false` and
 
 ## Credits
 
-This project draws inspiration and ideas from [Maunish-dave's GitHub Repository](https://github.com/Maunish-dave/Dynamic-Traffic-light-management-system/tree/main).
-
-## License
-
-This project is open-source and available under the MIT License.
+This project draws data and inspiration from [Maunish-dave's GitHub Repository](https://github.com/Maunish-dave/Dynamic-Traffic-light-management-system/tree/main).
 
